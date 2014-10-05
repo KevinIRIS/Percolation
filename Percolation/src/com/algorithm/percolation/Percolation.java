@@ -18,7 +18,7 @@ public class Percolation {
 			}
 		}
 		else
-			throw new IllegalArgumentException("Illegal pattern!");
+			throw new IllegalArgumentException();
 	}
 	private boolean isInGrid(int i,int j){
 		if((i<=0||i>this.N)||(j<=0||j>this.N))
@@ -71,6 +71,7 @@ public class Percolation {
 	 	 System.out.println(percolation.percolates());
 	 	 percolation.open(3, 1);
 	 	 percolation.open(3, 2);
+	 	 System.out.println(percolation.isFull(3, 2));
 	 	 percolation.open(4,2);
 		 System.out.println(percolation.percolates());
 	 }
